@@ -160,7 +160,6 @@ uv run jupyter lab
 ---
 
 ## 8. 폴더 구조
-## 8. 폴더 구조
 
 ```
 rag_agent_ex/
