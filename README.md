@@ -100,14 +100,14 @@ uv pip show langchain
 ## 5. Jupyter 커널 등록 및 삭제
 - 등록
 ```bash
-python -m ipykernel install --user --name agent_rag
+uv run python -m ipykernel install --user --name agent_rag
 
 # 확인
-jupyter kernelspec list
+uv run jupyter kernelspec list
 ```
 - 삭제[참고]
-```
-jupyter kernelspec uninstall .venv
+```bash
+uv run jupyter kernelspec uninstall .venv
 ```
 ---
 
@@ -152,7 +152,7 @@ load_dotenv(override=True)
 ## 7. Jupyter Notebook 실행
 
 ```bash
-jupyter lab
+uv run jupyter lab
 ```
 
 브라우저에서 자동으로 열리며 (열리지 않으면 터미널에 출력된 `http://localhost:8888/...` 주소를 브라우저에 붙여넣기), 커널은 `rag_agent` 를 선택합니다.
